@@ -5,6 +5,7 @@ import java.util.*;
  * at BNU together with a list of student who are enrolled
  *
  * @author Derek Peacock
+ * @author Ali Hassan
  * @version 1.0 14/07/2021
  */
 public class Course
