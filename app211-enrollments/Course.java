@@ -14,6 +14,8 @@ public class Course
     private String code;
     // The full title including qualification and subject
     private String title;
+    // The course the student is enrolled on
+    private Course course;
     
     /**
      * Create a Course with a maximum number of enrolments. 

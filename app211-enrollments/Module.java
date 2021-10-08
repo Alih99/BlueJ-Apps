@@ -10,33 +10,60 @@ public class Module
     //Variables
     private String code;
     private String title;
+    private int credit;
 
     /**
      * Constructor for objects of class Module
      */
-    public Module()
+    public Module(String code, String title)
     {
-    }
+        //initialise instance variable
+        this.code = code;
+        this.title = title;
+        credit = 0;
+        
+    } 
 
     /**
-     * This method will printout the Module code and 
-     * title
+     * An example of a method - replace this comment with you own
+     * 
+     * @param
+     * @return code
      */
-    public void print()
+    public String getCode()
     {
-        printHeading();
-        
-        System.out.println(" Module Code: " + code + ": " + title);
-        System.out.println(); 
+        return this.code; 
     }
     /**
-     * Print out the details of the course to the terminal.
+     * An example of a method - replace this comment with you own
+     * 
+     * @param
+     * return code
      */
-    private void printHeading()
+    public String getTitle()
     {
-        System.out.println(" --------------------------------");
-        System.out.println("   App211: Module Details");
-        System.out.println(" --------------------------------");
+     return this.title;
+    }
+    
+    public int getCredit()
+    {
+     return this.credit;
+    }
+    
+    public void setCredit(int credit)
+    {
+        this.credit = credit;
+    }
+    
+     /**
+     * Print the details of the course, the list
+     * of students enrolled and the module
+     */
+     public void print()
+    {
+        //printHeading();
+        
+        System.out.println(" Module Code: " + code + ": " + title);
         System.out.println();
     }
-}
+}    
