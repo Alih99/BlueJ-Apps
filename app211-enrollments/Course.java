@@ -15,7 +15,7 @@ public class Course
     // The full title including qualification and subject
     private String title;
     // The course the student is enrolled on
-    private Course course;
+    private Module module;
     
     /**
      * Create a Course with a maximum number of enrolments. 
@@ -37,9 +37,8 @@ public class Course
         printHeading();
         
         System.out.println(" Course Code: " + code + ": " + title);
-        module.print();
         System.out.println();
-            
+        //module.print(); 
     }
     
     /**

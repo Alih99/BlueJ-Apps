@@ -53,7 +53,7 @@ public class Module
      * Print the details of the course, the list
      * of students enrolled and the module
      */
-     public void printInfo()
+     public void print()
     {
         //printHeading();
         
