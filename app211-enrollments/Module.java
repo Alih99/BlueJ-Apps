@@ -1,64 +1,60 @@
 
 /**
- * This class Module represents the code, title and credit value
- * of a give module
+ * This class represents acourse module and contains
+ * information on the module title and code 
  * @author Ali Hassan
- * @version 1.0
+ * @version 17/10/2021
  */
 public class Module
 {
-    //Variables
+    // instance variables - replace the example below with your own
+    
     private String code;
+    
     private String title;
+    
     private int credit;
+    
 
     /**
-     * Module constructor assingns the code and title for a module
-     * It also initialises the credit value to 0
+     * Constructor for objects of class Module
      */
     public Module(String code, String title)
     {
-        //initialise instance variable
+        // initialise instance variables
+        credit = 0; 
         this.code = code;
         this.title = title;
-        credit = 0;
         
-    } 
+       
+    }
 
-    /**
-     * This methode returns the code for the module
-     * @return code represent the module code
-     */
     public String getCode()
     {
-        return this.code; 
+        return code;
     }
-   
+     
     public String getTitle()
     {
-     return this.title;
-    }
-    
-    public int getCredit()
-    {
-     return this.credit;
+        return title;
     }
     
     public void setCredit(int credit)
     {
-        this.credit = credit;
+        this.credit = credit; 
     }
     
-     /**
+      /**
      * Print the details of the course, the list
      * of students enrolled and the module
      */
-     public void print()
+    public void print()
     {
-        //printHeading();
-        
-        System.out.println(" Module Code: " + code + ": " + title);
-        System.out.println(" Credit: " + credit);
+        System.out.println(" Module Code: " + code + ": " 
+                        + title +  " Credit " + credit);
         System.out.println();
+        
     }
-}    
+    
+    }
+    
