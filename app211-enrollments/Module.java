@@ -29,16 +29,25 @@ public class Module
        
     }
 
+     /**
+     * get the code 
+     */
     public String getCode()
     {
         return code;
     }
-     
+    
+     /**
+     * give the title
+     */
     public String getTitle()
     {
         return title;
     }
     
+    /**
+     * Set the credit 
+     */
     public void setCredit(int credit)
     {
         this.credit = credit; 

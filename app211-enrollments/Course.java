@@ -19,7 +19,6 @@ public class Course
     
     /**
      * Create a Course with a maximum number of enrolments. 
-     * All other details are set to unkown values.
      */
     public Course(String code, String title)
     {
@@ -51,7 +50,10 @@ public class Course
         System.out.println(" --------------------------------");
         System.out.println();
     } 
-
+     
+    /**
+     * Assig the module
+     */
     public void assignModule(Module module)
     {
         this.module = module;
