@@ -7,8 +7,9 @@
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
-    
+    /**
+     * instance variables 
+     */
     private String code;
     
     private String title;
