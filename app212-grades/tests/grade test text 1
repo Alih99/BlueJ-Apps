@@ -1,0 +1,32 @@
+Student ali = new Student("Ali hassan", 100180948);
+ali.print();
+ Student ID: 100180948, Ali hassan
+Course computing = new Course("BT1CTG1", "BSc Computing");
+ali.enrol(computing);
+ali.printCourse();
+ Student ID: 100180948, Ali hassan
+
+ Course BT1CTG1: BSc Computing
+
+Module co452 = new Module("CO452" , "Programming Concepts");
+computing.addModule(co452);
+ModuleMark AliCo452Mark = new ModuleMark(co452);
+AliCo452Mark.setMark(90);
+ali.addMark(AliCo452Mark);
+ali.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100180948, Ali hassan
+
+ Course BT1CTG1: BSc Computing
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
