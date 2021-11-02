@@ -43,10 +43,10 @@ public class Course
      */
     public void createModules()
     {
-        Module co452 = new Module ("CO452", "Programming Concepts");
-        Module co453 = new Module ("CO453", "Apps Programming");
-        Module co457 = new Module ("CO457", "Business Modelling");
-        Module co456 = new Module ("CO456", "Web Development");
+        Module co452=new Module("CO452", "Programming Concepts");
+        Module co453=new Module("CO453", "Apps Programming");
+        Module co457=new Module("CO457", "Business Modelling");
+        Module co456=new Module("CO456", "Web Development");
         addModule(co452);
         addModule(co453);
         addModule(co457);
@@ -92,7 +92,7 @@ public class Course
         int finalMark = 0;
         for(ModuleMark mark : marks)
         {
-           total = total + mark.getValue();
+        total = total + mark.getValue();
         }
         
         finalMark = total / MAXN_MODULES;
@@ -121,8 +121,8 @@ public class Course
     {
         for (Module module : modules)
         {
-            module.print();
-            module.printCredit();
+         module.print();
+         module.printCredit(); 
         }
     }
 }
