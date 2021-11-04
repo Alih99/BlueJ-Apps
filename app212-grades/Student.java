@@ -70,16 +70,12 @@ public class Student
         int value = 75;
        for(Module module : course.modules)
        {
-         ModuleMark mark = new ModuleMark(module);
-         mark.setMark(75);
-         
-         
-         value = value - 10;
-         
-         marks.add(mark);
+           ModuleMark mark = new ModuleMark(module);
+           mark.setMark(value);
+           value = value - 10;
+           marks.add(mark);
     
-         
-       }
+        }
     }
     
     /**
@@ -119,7 +115,7 @@ public class Student
        for(ModuleMark mark: marks)
     {
         mark.print();
-        System.out.print(course.convertToGrade(mark.getValue()));
+        System.out.print("\t" + course.convertToGrade(mark.getValue()));
     }
     }
     
@@ -134,9 +130,9 @@ public class Student
         
         System.out.println();
         System.out.println();
-        System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
+        System.out.println(" ---- \t -------------------- \t ------ \t ---- \t -----");
         System.out.println(" Code \t Module \t\tCredit\t Mark \t Grade");
-        System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
+        System.out.println(" ---- \t -------------------- \t ------ \t ---- \t -----");
         
         printModules();
         Grades finalGrade = course.calculateGrade(marks);

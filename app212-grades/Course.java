@@ -43,10 +43,10 @@ public class Course
      */
     public void createModules()
     {
-        Module co452=new Module("CO452", "Programming Concepts");
-        Module co453=new Module("CO453", "Apps Programming");
-        Module co457=new Module("CO457", "Business Modelling");
-        Module co456=new Module("CO456", "Web Development");
+        Module co452 = new Module("CO452" , "Programming Concepts");
+        Module co453 = new Module("CO453" , "Apps Programming");
+        Module co457 = new Module("CO457" , "Business Modelling");
+        Module co456 = new Module("CO456" , "Web Development");
         addModule(co452);
         addModule(co453);
         addModule(co457);
@@ -59,7 +59,7 @@ public class Course
     {
         if(modules.size() < MAXN_MODULES)
         {
-            modules.add(module);
+         modules.add(module);
         }
     }
     
@@ -69,17 +69,17 @@ public class Course
     public Grades convertToGrade(int mark)
     {
         if(mark >= 0 && mark <= 39)
-        return Grades.F;
+            return Grades.F;
         else if(mark <= 49)
-        return Grades.D;
+            return Grades.D;
         else if(mark <= 59)
-        return Grades.C;
+            return Grades.C;
         else if(mark <= 69)
-        return Grades.B;
+            return Grades.B;
         else if(mark <= 100)
-        return Grades.A;
+            return Grades.A;
         else
-        return Grades.NS;
+            return Grades.NS;
     }
     
     /**
