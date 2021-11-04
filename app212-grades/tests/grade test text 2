@@ -1,0 +1,35 @@
+Student ali = new Student();
+Course programming = new Course();
+ali.enrol(programming);
+ali.printCourse();
+ Student ID: 100180948, Ali Hassan
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: Programming Concepts	  15 credits
+ CO453: Apps Programming	  15 credits
+ CO457: Business Modelling	  15 credits
+ CO456: Web Development		  15 creditsali.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100180948, Ali Hassan
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: Programming Concepts	  15 credits
+ CO453: Apps Programming	  15 credits
+ CO457: Business Modelling	  15 credits
+ CO456: Web Development		  15 credits
+
+ ---- 	 -------------------- 	 ------ 	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------ 	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	76	   A
+ CO453: Apps Programming	  15	49	   D
+ CO457: Business Modelling	  0	13	   F
+ CO456: Web Development		  15	60	   B
+
+ Final Course Grade = D
