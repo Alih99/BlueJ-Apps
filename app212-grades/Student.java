@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Random;
 /**
  * The Student class represents a student in a student administration system.
  * It holds the student details relevant in our context.
@@ -17,6 +18,8 @@ public class Student
     private Course course;
     // The marks awarded for the modules on the course
     private ArrayList<ModuleMark> marks;
+    // random mark
+    private Random randomMark;
     
     /**
      * This constructor creates a new student with a
@@ -34,10 +37,12 @@ public class Student
     {
         this.name = name;
         this.id = id;
-        
+        randomMark = new Random();
         marks = new ArrayList<ModuleMark>();
     }
-
+    /**
+     * add mark
+     */
     public void addMark(ModuleMark mark)
     {
         marks.add(mark);
@@ -71,8 +76,8 @@ public class Student
        for(Module module : course.modules)
        {
            ModuleMark mark = new ModuleMark(module);
-           mark.setMark(value);
-           value = value - 10;
+           mark.setMark(randomMark.nextInt(100));
+           //value = value - 10;
            marks.add(mark);
     
         }
@@ -115,7 +120,7 @@ public class Student
        for(ModuleMark mark: marks)
     {
         mark.print();
-        System.out.print("\t" + course.convertToGrade(mark.getValue()));
+        System.out.print("\t   " + course.convertToGrade(mark.getValue()));
     }
     }
     
