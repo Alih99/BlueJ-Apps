@@ -72,7 +72,7 @@ public class Student
      */
     public void awardTestMarks()
     {
-        int value = 75;
+       int value = 75;
        for(Module module : course.modules)
        {
            ModuleMark mark = new ModuleMark(module);
