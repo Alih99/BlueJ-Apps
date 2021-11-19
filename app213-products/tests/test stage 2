@@ -1,0 +1,13 @@
+StockList AlistockLis = new StockList();
+Product iPhone13Pro = new Product(103, "Apple iPhone 13  Pro");
+Product iPhone13ProMax = new Product(104, "Apple iPhone 13 Pro Max");
+AlistockLis.add(iPhone13Pro);
+AlistockLis.add(iPhone13ProMax);
+AlistockLis.print();
+
+ Ali's Stock List
+ ====================
+
+ ID 103: Apple iPhone 13  Pro stock level: 0
+ ID 104: Apple iPhone 13 Pro Max stock level: 0
+
