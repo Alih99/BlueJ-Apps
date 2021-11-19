@@ -1,8 +1,8 @@
 /**
  * Model some details of a product sold by a company.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Ali Hassan
+ * @version 1 (16/11/2021)
  */
 public class Product
 {
@@ -24,7 +24,8 @@ public class Product
         this.id = id;
         this.name = name;
         
-        quantity = 0;
+        quantity = 100;
+         
     }
 
     /**

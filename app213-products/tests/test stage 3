@@ -1,0 +1,77 @@
+StockList AlistockList = new StockList();
+StockDemo AlistockDemo = new StockDemo();
+
+ Ali's Stock List
+ ====================
+
+ ID 101: Apple iPhone 13 Mini stock level: 100
+ ID 102: Apple iPhone 13 stock level: 100
+ ID 103: Apple iPhone 13  Pro stock level: 100
+ ID 104: Apple iPhone 13 Pro Max stock level: 100
+ ID 105: Galaxy S21 Ultra stock level: 100
+ ID 106: Galaxy S21 plus stock level: 100
+ ID 107: Galaxy Note20 Ultra stock level: 100
+ ID 108: Galaxy Z-Fold stock level: 100
+ ID 109: Galaxy Z Flip stock level: 100
+ ID 110: Galaxy XCover Pro stock level: 100
+
+Not enogh shelf space forApple iPhone 13 Mini. please sell the exisiting stock
+Not enogh shelf space forApple iPhone 13. please sell the exisiting stock
+Not enogh shelf space forApple iPhone 13  Pro. please sell the exisiting stock
+Not enogh shelf space forApple iPhone 13 Pro Max. please sell the exisiting stock
+Not enogh shelf space forGalaxy S21 Ultra. please sell the exisiting stock
+Not enogh shelf space forGalaxy S21 plus. please sell the exisiting stock
+Not enogh shelf space forGalaxy Note20 Ultra. please sell the exisiting stock
+Not enogh shelf space forGalaxy Z-Fold. please sell the exisiting stock
+Not enogh shelf space forGalaxy Z Flip. please sell the exisiting stock
+Not enogh shelf space forGalaxy XCover Pro. please sell the exisiting stock
+
+ Ali's Stock List
+ ====================
+
+ ID 101: Apple iPhone 13 Mini stock level: 100
+ ID 102: Apple iPhone 13 stock level: 100
+ ID 103: Apple iPhone 13  Pro stock level: 100
+ ID 104: Apple iPhone 13 Pro Max stock level: 100
+ ID 105: Galaxy S21 Ultra stock level: 100
+ ID 106: Galaxy S21 plus stock level: 100
+ ID 107: Galaxy Note20 Ultra stock level: 100
+ ID 108: Galaxy Z-Fold stock level: 100
+ ID 109: Galaxy Z Flip stock level: 100
+ ID 110: Galaxy XCover Pro stock level: 100
+
+Can't sell100 of Apple iPhone 13 Mini becouse only have100
+Sold90ofApple iPhone 13
+Sold80ofApple iPhone 13  Pro
+Sold70ofApple iPhone 13 Pro Max
+Sold60ofGalaxy S21 Ultra
+Sold50ofGalaxy S21 plus
+Sold40ofGalaxy Note20 Ultra
+Sold30ofGalaxy Z-Fold
+Sold20ofGalaxy Z Flip
+Sold10ofGalaxy XCover Pro
+
+ Ali's Stock List
+ ====================
+
+ ID 101: Apple iPhone 13 Mini stock level: 100
+ ID 102: Apple iPhone 13 stock level: 10
+ ID 103: Apple iPhone 13  Pro stock level: 20
+ ID 104: Apple iPhone 13 Pro Max stock level: 30
+ ID 105: Galaxy S21 Ultra stock level: 40
+ ID 106: Galaxy S21 plus stock level: 50
+ ID 107: Galaxy Note20 Ultra stock level: 60
+ ID 108: Galaxy Z-Fold stock level: 70
+ ID 109: Galaxy Z Flip stock level: 80
+ ID 110: Galaxy XCover Pro stock level: 90
+
+Product AppleiPhone13Mini = new Product(101, "Apple iPhone 13 Mini");
+Product AppleiPhone13 = new Product(102, "Apple iPhone 13");
+Product AppleiPhone13Pro = new Product(103, "Apple iPhone 13  Pro");
+Product AppleiPhone13ProMax = new Product(104, "Apple iPhone 13 Pro Max");
+Product GalaxyS21Ultra = new Product(105, "Galaxy S21 Ultra");
+Product GalaxyS21plus = new Product(106, "Galaxy S21 plus");
+Product GalaxyNote20Ultra = new Product(107, "Galaxy Note20 Ultra");
+Product GalaxyZFold = new Product(108, "Galaxy Z-Fold");
+Product GalaxyZFlip = new Product(109, "Galaxy Z Flip");
+Product GalaxyXCoverPro = new Product(110, "Galaxy XCover Pro");

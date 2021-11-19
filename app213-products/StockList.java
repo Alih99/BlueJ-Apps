@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Ali Hassan 
+ * @version (16/11/2021)
  */
 public class StockList
 {
@@ -129,6 +129,12 @@ public class StockList
         }
     }    
 
+    public void searchProduct(String phrase)
+    {
+        if(phrase.contains("Samsung"))
+        {
+        }
+    }
     
     /**
      * Locate a product with the given ID, and return how
@@ -143,7 +149,7 @@ public class StockList
     }
 
     /**
-     * println details of the given product. If found,
+     * print details of the given product. If found,
      * its name and stock quantity will be shown.
      * @param id The ID of the product to look for.
      */
@@ -158,7 +164,7 @@ public class StockList
     }
     
     /**
-     * println out each product in the stock
+     * print out each product in the stock
      * in the order they are in the stock list
      */
     public void print()
