@@ -49,12 +49,23 @@ public class StockList
         Product product = findProduct(productID);
         if(product != null)
         {
-            product.increaseQuantity(amount);
+            if(product.getQuantity() > 500)
+            {
+                product.increaseQuantity(amount);
+                System.out.println("Bought" + amount + "of" + product.getName());
+               
+            }
+            else
+            {
+                System.out.println("Not enogh shelf space for" + product.getName() +
+                                    ". please sell the exisiting stock");
+                
+            }
         }
         else
         {
-            System.out.printin("Couldn't find product");
-        }   
+            System.out.println("Couldn't find product");
+        }
     }
     
     /**
@@ -95,22 +106,26 @@ public class StockList
         
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(product.getQuantity() > 0 && product.getQuantity() > amount)
             {
                 product.decreaseQuantity(amount);
-                System.out.printin("Sold" + amount + "of" + product.getName());
+                System.out.println("Sold" + amount + "of" + product.getName());
                
+            }
+            else if(product.getQuantity() ==0)
+            {
+                System.out.println("The product" + product.getName() +
+                                    " is out of stock");
             }
             else
             {
-                System.out.printin("The product" + product.getName() +
-                                    " is out of stock");
-                // printout message
+                System.out.println("Can't sell" + amount + " of " + product.getName() +
+                                     " becouse only have" + product .getQuantity());
             }
         }
         else
         {
-            System.out.printin("Couldn't find product");
+            System.out.println("Couldn't find product");
         }
     }    
 
@@ -128,7 +143,7 @@ public class StockList
     }
 
     /**
-     * Print details of the given product. If found,
+     * println details of the given product. If found,
      * its name and stock quantity will be shown.
      * @param id The ID of the product to look for.
      */
@@ -143,7 +158,7 @@ public class StockList
     }
     
     /**
-     * Print out each product in the stock
+     * println out each product in the stock
      * in the order they are in the stock list
      */
     public void print()

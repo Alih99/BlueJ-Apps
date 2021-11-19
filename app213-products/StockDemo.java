@@ -53,11 +53,17 @@ public class StockDemo
     
     private void buyProducts()
     {
-        stock.buyProduct(101, 500);
+        stock.buyProduct(101, 53);
+        stock.buyProduct(102, 4);
+        stock.buyProduct(103, 16);
+        stock.buyProduct(104, 50);
     }
 
     private void sellProducts()
     {
-        stock.sellProduct(101, 300);
+        stock.sellProduct(101, 36);
+        stock.sellProduct(102, 6);
+        stock.sellProduct(103, 86);
+        stock.sellProduct(104, 86);
     }    
 }

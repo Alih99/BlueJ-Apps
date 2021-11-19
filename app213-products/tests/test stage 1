@@ -1,0 +1,24 @@
+Product iPhone = new Product(101, "Apple iPhone 13 Mini");
+iPhone.print();
+ ID 101: Apple iPhone 13 Mini stock level: 0
+iPhone.decreaseQuantity(1);
+iPhone.print();
+ ID 101: Apple iPhone 13 Mini stock level: 0
+iPhone.increaseQuantity(10);
+iPhone.print();
+ ID 101: Apple iPhone 13 Mini stock level: 10
+iPhone.decreaseQuantity(5);
+iPhone.print();
+ ID 101: Apple iPhone 13 Mini stock level: 5
+Product iPhone13 = new Product(102, "Apple iPhone 13");
+StockList AlistockLis = new StockList();
+AlistockLis.add(iPhone);
+AlistockLis.add(iPhone13);
+AlistockLis.print();
+
+ Ali's Stock List
+ ====================
+
+ ID 101: Apple iPhone 13 Mini stock level: 5
+ ID 102: Apple iPhone 13 stock level: 0
+
