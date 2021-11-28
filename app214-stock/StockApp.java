@@ -12,7 +12,7 @@ public class StockApp
     private InputReader reader;
     
     private StockList stock;
-    //private StockDemo;
+    
     
     /**
      * Constructor for objects of class StockApp
@@ -22,7 +22,7 @@ public class StockApp
         reader = new InputReader();
         
         stock = new StockList();
-        //StockDemo demo = new StockDemo(stock);
+        StockDemo demo = new StockDemo();
     }
 
     /**
@@ -53,11 +53,11 @@ public class StockApp
         else if(choice.equals("add"))
         {
             reader.getInt("please enter the ID: ");
-            String name = reader.getString("Please enter the name of the ");
+            String name = reader.getString("Please enter the name of the product ");
             Product product = new Product(101, "Apple iPhone 13 Mini");
             stock.add(product);
             System.out.println("Product" + product.getID()
-            + ", " + product.getName() + "has been Added");
+            + ", " + product.getName() +  "has been Added");
         }
         else if(choice.equals("print"))
         {

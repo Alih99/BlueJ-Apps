@@ -55,6 +55,7 @@ public class InputReader
      */
     public int getInt(String prompt)
     {
+        reader = new Scanner(System.in);
         int number = 0;
         boolean isValid = false;
         
