@@ -12,6 +12,7 @@ public class StockApp
     private InputReader reader;
     
     private StockList stock;
+    private StockDemo demo;
     
     
     /**
@@ -54,10 +55,10 @@ public class StockApp
         {
             reader.getInt("please enter the ID: ");
             String name = reader.getString("Please enter the name of the product ");
-            Product product = new Product(101, "Apple iPhone 13 Mini");
+            Product product = new Product (101, "Apple iPhone 13 Mini");
             stock.add(product);
             System.out.println("Product" + product.getID()
-            + ", " + product.getName() +  "has been Added");
+            + ",  " + product.getName() +   "has been Added");
         }
         else if(choice.equals("print"))
         {
@@ -74,8 +75,13 @@ public class StockApp
     {
         System.out.println();
         System.out.println("    Add:        Add a new product");
+        System.out.println("    Buy:        Buy a quantity of a product");
+        System.out.println("    Sell:       Se1ll a quantity of a product");
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
+        System.out.println("    Search      Prints all products containing a string");
+        System.out.println("    Stock       Prints all products that are of low quantity");
+        System.out.println("    Restock     Restocks all products below the minimum stock level");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
