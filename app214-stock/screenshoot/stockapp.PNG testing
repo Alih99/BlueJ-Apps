@@ -1,0 +1,200 @@
+ ID 103: Apple iPhone 13  Pro stock level: 0
+ ID 104: Apple iPhone 13 Pro Max stock level: 0
+ ID 105: Galaxy S21 Ultra stock level: 0
+ ID 106: Galaxy S21 plus stock level: 0
+ ID 107: Galaxy Note20 Ultra stock level: 0
+ ID 108: Galaxy Z-Fold stock level: 0
+ ID 109: Galaxy Z Flip stock level: 0
+ ID 110: Galaxy XCover Pro stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter ID of product >
+111
+Please enter name of the product>ipad pro
+Productipad prowith ID111has been added
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter ID of product >
+101
+Please enter name of the product>Apple iPhone 13 Mini
+ProductApple iPhone 13 Miniwith ID101has been added
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > remove
+Invalid input try again
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > 109
+Invalid input try again
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > remove
+Invalid input try again
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > buy
+Please enter ID of product >
+102
+Please enter amount of Product to buy (between 1 and 10)> 
+5
+Couldn't find product
+you have brought product with ID1025times
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > sell
+Please enter ID of product >
+103
+Please enter amount of Product to sell (between 1 and 10)> 
+2
+Couldn't find product
+you have sold product with ID1032times
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > search
+Please enter name of Product > Apple iPhone 13 Mini
+ ID 101: Apple iPhone 13 Mini stock level: 0
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > stock
+Please enter the max quantity to show (between 1 and 5)>
+1
+ ID 111: ipad pro stock level: 0
+ ID 101: Apple iPhone 13 Mini stock level: 0
+would you like to restock all of these (buy 10) (y/n)>restock
+Invalid input you will go back to main menu
+********************************
+  App21-04: Stock Application 
+      by Ali Hassan
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy a quantity of a product
+    Sell:       Sell a quantity of a product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search      Prints all products containing a string
+    Stock       Prints all products that are of low quantity
+    Restock     Restocks all products below the minimum stock level
+    Quit:       Quit the program
+
+Please enter your choice > 
