@@ -30,6 +30,26 @@ public class StockList
     }
     
     /**
+     * @remove a product from the list
+     * @param item the product item to be removed
+     */
+    public void remove(int productID)
+    {
+        Product product = findProduct(productID);
+        if(product != null)
+        {
+            System.out.println(product + "has been removed");
+            stock.remove(product);
+        }
+        else
+        {
+            System.out.println("No item with that ID exist");
+        }
+    }
+    
+    
+    
+    /**
      * A method to buy a single quantity of the product
      */
     public void buyProduct(int productID)
@@ -49,7 +69,7 @@ public class StockList
         Product product = findProduct(productID);
         if(product != null)
         {
-            if(product.getQuantity() > 500)
+            if(product.getQuantity() > 1000)
             {
                 product.increaseQuantity(amount);
                 System.out.println("Bought" + amount + "of" + product.getName());
@@ -84,7 +104,53 @@ public class StockList
         return null;
     }
     
-       /**
+    /**
+     * finds the product that starts with whatever you string you want
+     */
+    public void findProducts(String phrase)
+    {
+        for(Product product : stock)
+        {
+            if(product.getName().startsWith(phrase) == true)
+            {
+                
+                System.out.println(product);
+            }
+        }
+        
+    }
+    
+    /**
+     * prints out stock that has quantity 10 or below
+     */
+    public void lowStock(int amount)
+    {
+        for(Product product : stock)
+        {
+            if(product.getQuantity() <= 10)
+            {
+                System.out.println(product);
+            }
+        }
+    }
+    /**
+     * buy the quantity of 100 to anytime that is below 10 and then
+     * prints out stock of that item
+     */
+    public void reStock(int amount, int quanitity)
+    {
+        for(Product product : stock)
+        {
+            if(product.getQuantity() <=10)
+            {
+                int id = product.getID();
+                buyProduct(id,100);
+                System.out.println(product);
+            }
+        }
+    
+    }
+    /**
      * Sell one of the given product.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
@@ -145,6 +211,11 @@ public class StockList
      */
     public int numberInStock(int productID)
     {
+        Product product = findProduct(productID);
+        if(product !=null)
+        {
+            return product.getQuantity();
+        }
         return 0;
     }
 

@@ -24,7 +24,7 @@ public class Product
         this.id = id;
         this.name = name;
         
-        quantity = 100;
+        quantity = 0;
          
     }
 
